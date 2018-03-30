@@ -8,6 +8,6 @@
     "browser-sync": "^2.23.6"
   },
   "scripts": {
-    "serve": "npx browser-sync start --server --files "./**/*""
+    "serve": "npx browser-sync start --server --files './**/*'"
   }
 }
