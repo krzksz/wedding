@@ -98,23 +98,6 @@ $(document).ready(function() {
         });
     }, 200);
 
-    // Parallax scrolling
-
-    if (
-        !/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(
-            navigator.userAgent || navigator.vendor || window.opera
-        )
-    ) {
-        if (window.requestAnimationFrame) {
-            parallaxBackground();
-            $(window).scroll(function() {
-                requestAnimationFrame(parallaxBackground);
-            });
-        }
-    } else {
-        $('.parallax').removeClass('parallax');
-    }
-
     // Image fade on story 2 element
 
     $('.story-2 img').mouseenter(function() {
