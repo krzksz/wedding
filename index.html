@@ -5,12 +5,8 @@
 	<meta charset="utf-8">
 	<title>Ada & Mateusz - Ślub</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/theme-brown2.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700%7CLibre+Baskerville:400,400italic' rel='stylesheet'
-	    type='text/css'>
+	<link href="build/css/styles.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700%7CLibre+Baskerville:400,400italic' rel='stylesheet'>
 </head>
 
 <body>
@@ -54,7 +50,7 @@
 
 		<section class="header header-1 fullscreen overlay">
 			<div class="background-image-holder">
-				<img alt="Background image" class="background-image" src="img/my.jpg">
+				<img alt="Background image" class="background-image" src="build/img/us.jpg">
 			</div>
 
 			<div class="container">
@@ -82,14 +78,22 @@
 					<div class="col-md-4 col-md-offset-2 col-sm-6 feature pic">
 						<span class="mini-title">ONA</span>
 						<div class="photo">
-							<img alt="Ada" src="img/ada.jpg">
+							<picture>
+								<source srcset="build/img/ada.webp" type="image/webp">
+								<source srcset="build/img/ada.jpg" type="image/jpeg">
+								<img src="build/img/ada.jpg" alt="Ada">
+							</picture>
 						</div>
 					</div>
 
 					<div class="col-md-4 col-sm-6 feature pic">
 						<span class="mini-title">ON</span>
 						<div class="photo">
-							<img alt="Mateusz" src="img/mati.jpg">
+							<picture>
+								<source srcset="build/img/mati.webp" type="image/webp">
+								<source srcset="build/img/mati.jpg" type="image/jpeg">
+								<img src="build/img/mati.jpg" alt="Mateusz">
+							</picture>
 						</div>
 					</div>
 				</div>
@@ -98,7 +102,7 @@
 
 		<section class="details details-2 overlay parallax">
 			<div class="background-image-holder dance">
-				<img alt="Background image" class="background-image" src="img/taniec.jpg">
+				<img alt="Background image" class="background-image" src="build/img/dance.jpg">
 			</div>
 
 			<div class="container">
@@ -162,7 +166,7 @@
 
 				<div class="row">
 					<div class="col-sm-4 feature">
-						<img class="icon" src="img/bed.svg">
+						<img class="icon" src="build/img/bed.svg">
 						<h6>Noclegi w dniu wesela</h6>
 						<p>
 							Dla przyjezdnych gości mamy zapewnione noclegi po weselu w:
@@ -175,7 +179,7 @@
 					</div>
 
 					<div class="col-sm-4 feature">
-						<img class="icon" src="img/bus.svg">
+						<img class="icon" src="build/img/bus.svg">
 						<h6>Powrót z wesela</h6>
 						<p>
 							Dla Sanoczan będzie wynajęty bus, kursujący między Olszanicą i Sanokiem. W zależności od potrzeby, możemy też zorganizować
@@ -184,7 +188,7 @@
 					</div>
 
 					<div class="col-sm-4 feature">
-						<img class="icon" src="img/bed.svg">
+						<img class="icon" src="build/img/bed.svg">
 						<h6>Więcej noclegów</h6>
 						<p>
 							Jeśli chcecie przyjechać wcześniej lub zostać dłużej, poinformujcie nas o tym, a my zrobimy rezerwację.
@@ -313,27 +317,10 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer footer-1">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<h6>© Copyright 2015 Medium Rare - All Rights Reserved</h6>
-					</div>
-				</div>
-			</div>
-		</footer>
 	</div>
 
-
-	<script src="js/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-	<script src="js/smooth-scroll.min.js"></script>
-	<script src="js/placeholders.min.js"></script>
-	<script src="js/flexslider.min.js"></script>
-	<script src="js/spectragram.min.js"></script>
-	<script src="js/scripts.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+	<script src="build/js/scripts.min.js" defer></script>
 </body>
 
 </html>
