@@ -76,3 +76,22 @@
 .custom-link {
     color: #444444;
 }
+
+@media (max-width: 767px) {
+    .header h1 {
+        line-height: 1.1;
+        font-size: 18vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .details h1 {
+        line-height: 1.1;
+        font-size: 10vw;
+        font-weight: 100;
+    }
+}
+
+.mobile-toggle {
+    top: 19px;
+}
