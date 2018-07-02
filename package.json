@@ -14,8 +14,7 @@
         "serve": "browser-sync start --server --files './**/*'",
         "images": "imagemin src/img/* --out-dir=build/img",
         "styles": "cleancss -o build/css/styles.min.css src/css/*.css",
-        "scripts":
-            "uglifyjs src/js/bootstrap.js src/js/smooth-scroll.js src/js/scripts.js -c -o build/js/scripts.min.js",
+        "scripts": "uglifyjs src/js/bootstrap.js src/js/smooth-scroll.js src/js/scripts.js -c -o build/js/scripts.min.js",
         "build": "npm run images && npm run scripts && npm run styles"
     }
 }
